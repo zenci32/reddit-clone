@@ -8,7 +8,7 @@ void main() {
       () => runApp(
             const MyApp(),
           ),
-      blocObserver: SpacexBlocObserver());
+      blocObserver: RedditBlocObserver());
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class SpacexBlocObserver extends BlocObserver {
+class RedditBlocObserver extends BlocObserver {
   @override
   void onTransition(Bloc bloc, Transition transition) {
     "Bloc : $bloc".log();
